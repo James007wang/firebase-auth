@@ -59,6 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Collapsible.init(items);
 
   var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, options);
+  M.Sidenav.init(elems);
 
 });
