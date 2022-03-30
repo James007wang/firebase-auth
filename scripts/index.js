@@ -59,6 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
   M.Collapsible.init(items);
 
   var elems = document.querySelectorAll('.sidenav');
-  M.Sidenav.init(elems);
+  M.Sidenav.init(elems,{edge,'left'});
 
 });
