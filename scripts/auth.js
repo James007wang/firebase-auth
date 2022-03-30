@@ -51,7 +51,7 @@ signupForm.addEventListener('submit', (e) => {
 });
 
 // logout
-const logout = document.querySelector('#logout');
+const logout = document.querySelectorAll('#logout');
 logout.addEventListener('click', (e) => {
   e.preventDefault();
   auth.signOut();
