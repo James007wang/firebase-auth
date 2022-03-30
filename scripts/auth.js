@@ -51,14 +51,20 @@ signupForm.addEventListener('submit', (e) => {
 });
 
 // logout
-const logouts = document.querySelectorAll('#logout');
-logouts.forEach(element => {
-  if(element => {element.addEventListener('click', (e) => {
+const logout = document.querySelector('#logout');
+
+logout.addEventListener('click', (e) => {
     e.preventDefault();
     auth.signOut();
   });
-});
-})
+
+const logout1 = document.querySelector('#logout-sidebar');
+
+logout1.addEventListener('click', (e) => {
+    e.preventDefault();
+    auth.signOut();
+  });
+
 
 // login
 const loginForm = document.querySelector('#login-form');
