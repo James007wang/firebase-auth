@@ -44,7 +44,7 @@ signupForm.addEventListener('submit', (e) => {
     });
   }).then(() => {
     // close the signup modal & reset form
-    const modal = document.querySelector('#modal-signup');
+    const modal = document.querySelectorAll('#modal-signup');
     M.Modal.getInstance(modal).close();
     signupForm.reset();
   });
