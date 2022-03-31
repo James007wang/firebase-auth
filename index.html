@@ -180,7 +180,9 @@
   </script>
    
   <script type="text/javascript">
-    let provider = new firebase.auth.GoogleAuthProvider()
+    let provider = new firebase.auth.GoogleAuthProvider('google.com');
+    provider.addScope('profile');
+    provider.addScope('email');
     // FirebaseUI config.
     var uiConfig = {
       /* signInSuccessUrl: '<url-to-redirect-to-on-success>', */
